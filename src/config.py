@@ -2,7 +2,6 @@ import torch
 import os
 
 class Config:
-    # File Paths
     RAW_DATA_PATH = 'data/US_Accidents_March23.csv'
     PROCESSED_DATA_PATH = 'data/US_Accidents_MASTER.csv'
     OUTPUT_DIR = 'outputs/'
