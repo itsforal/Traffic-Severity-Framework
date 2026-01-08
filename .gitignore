@@ -1,0 +1,5 @@
+data/
+outputs/*.png
+outputs/*.csv
+__pycache__/
+.env
