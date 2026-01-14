@@ -1,13 +1,3 @@
-"""
-TRAFFIC ACCIDENT SEVERITY CLASSIFICATION FRAMEWORK
-Main Entry Point - Version 1.0 (Production Ready)
-
-This script orchestrates the entire pipeline:
-1. Data Preprocessing & Memory Optimization
-2. Classical Machine Learning Ensemble (GBM, RF, etc.)
-3. Research-Based DeepInsight (CNN) Hierarchical Training
-"""
-
 import os
 import pandas as pd
 import numpy as np
