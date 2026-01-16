@@ -19,7 +19,7 @@ def train_dl_stage(X, y, stage_name, beta):
     """
     print(f"\n--- Training {stage_name} (Beta: {beta}) ---")
     
-    # 1. Feature to Image Mapping (DeepInsight)
+    # 1. Feature to Image Mapping 
     transformer = DeepInsightTransformer()
     X_scaled, coords = transformer.fit_transform(X)
     
@@ -82,7 +82,7 @@ def train_dl_stage(X, y, stage_name, beta):
 
 def main():
     print("==================================================")
-    print("🚦 TRAFFIC ACCIDENT SEVERITY FRAMEWORK STARTING")
+    print(" TRAFFIC ACCIDENT SEVERITY FRAMEWORK STARTING")
     print("==================================================")
 
     # PHASE 1: PREPROCESSING
@@ -94,7 +94,7 @@ def main():
         print("\n[Phase 1] Loading existing processed data...")
         df = pd.read_csv(Config.PROCESSED_DATA_PATH)
 
-    # PHASE 2: HIERARCHICAL DEEP LEARNING (The "Khafan" Part)
+    # PHASE 2: HIERARCHICAL DEEP LEARNING 
     print("\n[Phase 2] Starting DeepInsight Hierarchical Inference...")
     
     # --- STAGE 1: Fatal (Severity 4) vs Others ---
@@ -116,7 +116,7 @@ def main():
     train_dl_stage(X_stage2, y_injury, "Stage2_Injury_vs_PDO", beta=1.0)
 
     print("\n==================================================")
-    print("✅ PROJECT EXECUTION COMPLETE")
+    print(" PROJECT EXECUTION COMPLETE")
     print(f"All artifacts are available in: {Config.OUTPUT_DIR}")
     print("==================================================")
 
